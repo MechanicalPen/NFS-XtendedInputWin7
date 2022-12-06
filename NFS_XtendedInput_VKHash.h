@@ -382,6 +382,7 @@ unsigned char ConvertVKNameToValue(char* name)
 		return VK_F23;
 	case VK_F24_HASH:
 		return VK_F24;
+#if (_WIN32_WINNT >= 0x0602 /*_WIN32_WINNT_WIN8*/)
 	case VK_NAVIGATION_VIEW_HASH:
 		return VK_NAVIGATION_VIEW;
 	case VK_NAVIGATION_MENU_HASH:
@@ -398,6 +399,7 @@ unsigned char ConvertVKNameToValue(char* name)
 		return VK_NAVIGATION_ACCEPT;
 	case VK_NAVIGATION_CANCEL_HASH:
 		return VK_NAVIGATION_CANCEL;
+#endif
 	case VK_NUMLOCK_HASH:
 		return VK_NUMLOCK;
 	case VK_SCROLL_HASH:
@@ -476,6 +478,7 @@ unsigned char ConvertVKNameToValue(char* name)
 		return VK_OEM_2;
 	case VK_OEM_3_HASH:
 		return VK_OEM_3;
+#if (_WIN32_WINNT >= 0x0602 /*_WIN32_WINNT_WIN8*/)
 	case VK_GAMEPAD_A_HASH:
 		return VK_GAMEPAD_A;
 	case VK_GAMEPAD_B_HASH:
@@ -524,6 +527,7 @@ unsigned char ConvertVKNameToValue(char* name)
 		return VK_GAMEPAD_RIGHT_THUMBSTICK_RIGHT;
 	case VK_GAMEPAD_RIGHT_THUMBSTICK_LEFT_HASH:
 		return VK_GAMEPAD_RIGHT_THUMBSTICK_LEFT;
+#endif
 	case VK_OEM_4_HASH:
 		return VK_OEM_4;
 	case VK_OEM_5_HASH:
